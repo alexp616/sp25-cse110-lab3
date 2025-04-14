@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chocolate Inc.</title>
+    <meta name="description" content="meeting notes for 4/14/25"></meta>
+    <link rel="icon" href="/assets/ravnoorbedi.png">
+  </head>
+  <body>
+    <header><h1>Making more chocolate</h1></header>
+    
+    <main>
+      <h2>Chocolate Inc.</h2>
+      <details>
+        <summary>About us</summary>
+        <p>we like chocolate</p>
+      </details>
+      <p>04/14/2025</p>
+      
+      <section>
+        <h3>Table of Contents</h3>
+        <nav>
+          <ol>
+            <li><a href="#attendees">Attendees</a></li>
+            <li><a href="#agenda">Meeting Agenda</a></li>
+            <li><a href="#last-meeting">Last Meeting</a></li>
+            <li><a href="#meeting-notes">Meeting Notes</a></li>
+            <li><a href="#form">Form</a></li>
+            <li><a href="#video-and-audio">Form</a></li>
+          </ol>
+        </nav>
+      </section>
+      <hr>
+      <section id="attendees">
+        <h3>Attendees</h3> 
+        <ul>
+          <li>Alex</li>
+          <li>Chester Chocolate</li>
+          <li>Cap'n Chocolate</li>
+        </ul>
+      </section>
+      <hr>
+      <section id="agenda">
+        <h3>Meeting agenda</h3>
+        <ol>
+          <li>
+            Unfinished business from last meeting
+            <ul>
+              <li>Sourcing cacao beans</li>
+              <li>Underpaying and exploiting children for cheap labor</li>
+            </ul>
+          </li>
+          <li>
+            New promising-looking chocolate production method
+            <ul>
+              <li>Extremely cost-effective</li>
+              <li>No need to invest in resources</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+      <hr>
+      <section id="meeting-notes">
+        <h3>Meeting notes</h3>
+        <p>
+          The public found out that we exploit poor people 
+          in West Africa to farm cocoa beans for us for really 
+          cheap and they are <b>not</b> happy about it and we need an 
+          alternative.
+        </p>
+        <p>
+          Recently, a method to produce <i>infinite chocolate</i> has been 
+          circling around on the internet. Starting out with a bar 
+          of chocolate, if it is cut and put back together a certain 
+          way, it seems to create another piece of chocolate:
+        </p>
+        <div>
+          <img src="assets/infinitechocolate.gif">
+        </div>
+        <p>
+          <strong>This will revolutionize our chocolate business.</strong> 
+          <br>
+          With this, <em>we can cut production costs to zero</em>, and the public 
+          will no longer be mad about the children in Ghana.
+        </p>
+        <span>this is here for the span requirement</span>
+      </section>
+      <section id="video-audio">
+        <h3>Video and audio</h3>
+        <video src="assets/videoplayback.mp4" type="video/mp4" controls></video><br>
+        <audio src="assets/videoplayback.mp3" type="audio/mp3" controls></audio><br>
+      </section>
+
+      <section id="form">
+        <h3>Form</h3>
+        <form>
+          <fieldset>
+            <label>Name: </label><input type="text"><br>
+            <label>I am human: </label><input type="checkbox"><br>
+            <label>Should we keep using child labor?</label>
+            <input type="radio" name="yesno"> <label>Yes</label>
+            <input type="radio" name="yesno"> <label>No</label><br>
+            <label>Favorite chocolate:</label>
+            <input list="chocolates" id="chocolate"/>
+            <datalist id="chocolates">
+              <option value="Dark"></option>
+              <option value="Milk"></option>
+              <option value="White"></option>
+            </datalist><br>
+            <label for="letter">Favorite letter of chocolate</label>
+            <select id="letter">
+              <option>c</option>
+              <option>h</option>
+              <option>o</option>
+              <option>c</option>
+              <option>l</option>
+              <option>a</option>
+              <option>t</option>
+              <option>e</option>
+            </select><br>
+            <button type="button">click me</button><br>
+            <label>Date: </label><input type="date"><br>
+            <label>Other comments: </label><textarea></textarea>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer><small>created by Alex Pan for CSE 110 lab 2</small></footer>
+  </body>
+</html>
