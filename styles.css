@@ -99,16 +99,16 @@ div.project {
     width: 150px;
     max-height: 160px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
 
-.project:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
-}
+    &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        border-radius: 8px;
+    }
 
-.project:active {
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
+    &:active {
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.6);
+        border-radius: 8px;
+    }
 }
 
 .languages {
