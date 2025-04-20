@@ -76,7 +76,7 @@ a {
     padding: 10px 2.6mm;
     border-radius: 2px;
     border-style: dotted;
-    border-color: color-mix(in srgb, plum, white);
+    border-color: gray;
 }
 
 p:has(+ .code-block) {
@@ -100,7 +100,9 @@ div.project {
     max-height: 160px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 
-    &:hover {
+    /* This works on my chrome but doesn't pass the 
+    validator */
+    /* &:hover {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
         border-radius: 8px;
     }
@@ -108,7 +110,17 @@ div.project {
     &:active {
         box-shadow: 0 0 100px rgba(0, 0, 0, 0.6);
         border-radius: 8px;
-    }
+    } */
+}
+
+.project:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.project:active {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
 }
 
 .languages {
