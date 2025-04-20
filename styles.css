@@ -76,7 +76,7 @@ a {
     padding: 10px 2.6mm;
     border-radius: 2px;
     border-style: dotted;
-    border-color: color-mix(in rgb, black 50%, white 50%);
+    border-color: color-mix(in srgb, plum, white);
 }
 
 p:has(+ .code-block) {
@@ -129,7 +129,7 @@ div.project {
     font-weight: bold;
     border-radius: 3px;
     padding: 10px;
-    width: 50px;
+    width: 45px;
 }
 
 .julia {
