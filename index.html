@@ -1,129 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Chocolate Inc.</title>
-    <meta name="description" content="meeting notes for 4/14/25">
+    <title>Alex Pan's Website</title>
+    <meta name="description" content="
+      Alex Pan's professional personal website, containing his 
+      interests and accomplishments.
+    ">
     <link rel="icon" href="/assets/ravnoorbedi.png">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header><h1>Making more chocolate</h1></header>
-    
-    <main>
-      <h2>Chocolate Inc.</h2>
-      <details>
-        <summary>About us</summary>
-        <p>we like chocolate</p>
-      </details>
-      <p>04/14/2025</p>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <div id="rickroll-button">
+        <img src="assets/rick.png" width="50px">
+      </div>
+    </a>
+
+    <header>
+      <h1>Alex Pan</h1>
       
       <section>
-        <h3>Table of Contents</h3>
+        <h3>Sections</h3>
         <nav>
           <ol>
-            <li><a href="#attendees">Attendees</a></li>
-            <li><a href="#agenda">Meeting Agenda</a></li>
-            <li><a href="#last-meeting">Last Meeting</a></li>
-            <li><a href="#meeting-notes">Meeting Notes</a></li>
-            <li><a href="#form">Form</a></li>
-            <li><a href="#video-and-audio">Form</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#favorite-language">Favorite Programming Language</a></li>
+            <li><a href="#pl-visual">Programming Language Experience Visual</a></li>
+
           </ol>
         </nav>
       </section>
       <hr>
-      <section id="attendees">
-        <h3>Attendees</h3> 
-        <ul>
-          <li>Alex</li>
-          <li>Chester Chocolate</li>
-          <li>Cap'n Chocolate</li>
-        </ul>
-      </section>
-      <hr>
-      <section id="agenda">
-        <h3>Meeting agenda</h3>
-        <ol>
-          <li>
-            Unfinished business from last meeting
-            <ul>
-              <li>Sourcing cacao beans</li>
-              <li>Underpaying and exploiting children for cheap labor</li>
-            </ul>
-          </li>
-          <li>
-            New promising-looking chocolate production method
-            <ul>
-              <li>Extremely cost-effective</li>
-              <li>No need to invest in resources</li>
-            </ul>
-          </li>
-        </ol>
-      </section>
-      <hr>
-      <section id="meeting-notes">
-        <h3>Meeting notes</h3>
+    </header>
+    
+    <main>
+      
+      <section id="about-me">
+        <h3>About Me</h3>
+        
         <p>
-          The public found out that we exploit poor people 
-          in West Africa to farm cocoa beans for us for really 
-          cheap and they are <b>not</b> happy about it and we need an 
-          alternative.
+          I am currently a undergraduate second year in computer science 
+        at UCSD. I'm mainly interested in cryptography, but I also 
+        want to learn about parallel compilers, data structures, and 
+        model theory.
         </p>
-        <p>
-          Recently, a method to produce <i>infinite chocolate</i> has been 
-          circling around on the internet. Starting out with a bar 
-          of chocolate, if it is cut and put back together a certain 
-          way, it seems to create another piece of chocolate:
-        </p>
-        <div>
-          <img src="assets/infinitechocolate.gif" alt="infinite chocolate gif">
-        </div>
-        <p>
-          <strong>This will revolutionize our chocolate business.</strong> 
-          <br>
-          With this, <em>we can cut production costs to zero</em>, and the public 
-          will no longer be mad about the children in Ghana.
-        </p>
-        <span>this is here for the span requirement</span>
-      </section>
-      <section id="video-audio">
-        <h3>Video and audio</h3>
-        <video src="assets/videoplayback.mp4" controls></video><br>
-        <audio src="assets/videoplayback.mp3" controls></audio><br>
-      </section>
 
-      <section id="form">
-        <h3>Form</h3>
-        <form>
-          <fieldset>
-            <label>Name: </label><input type="text"><br>
-            <label>I am human: </label><input type="checkbox"><br>
-            <label>Should we keep using child labor?</label>
-            <input type="radio" name="yesno"> <label>Yes</label>
-            <input type="radio" name="yesno"> <label>No</label><br>
-            <label>Favorite chocolate:</label>
-            <input list="chocolates" id="chocolate">
-            <datalist id="chocolates">
-              <option value="Dark"></option>
-              <option value="Milk"></option>
-              <option value="White"></option>
-            </datalist><br>
-            <label for="letter">Favorite letter of chocolate</label>
-            <select id="letter">
-              <option>c</option>
-              <option>h</option>
-              <option>o</option>
-              <option>c</option>
-              <option>l</option>
-              <option>a</option>
-              <option>t</option>
-              <option>e</option>
-            </select><br>
-            <button type="button">click me</button><br>
-            <label>Date: </label><input type="date"><br>
-            <label>Other comments: </label><textarea></textarea>
-          </fieldset>
-        </form>
+        <p>
+          I have been doing research with 
+        <a href="https://mathweb.ucsd.edu/~jjgarzel/" style="text-decoration: underline">Jack Garzella</a> 
+        for over a year now, working on improving algorithms in computer 
+        algebra.
+        </p>
+        
       </section>
-    </main>
-    <footer><small>created by Alex Pan for CSE 110 lab 2</small></footer>
+      <hr>
+
+      <section id="projects">
+        <h3>Projects</h3>
+        
+        <p>
+          Because I've spent most of my time in college working in 
+          computer algebra and scientific computing, all of my side 
+          projects are related to those.  
+        </p>
+        
+        <div class="projects-grid">
+          <div class="project">
+            <b><a href="https://github.com/alexp616/GPUPolynomials.jl">GPUPolynomials.jl</a></b>
+            <p>A library for fast polynomial arithmetic over finite fields.</p>
+          </div>
+          <div class="project">
+            <b><a href="https://github.com/alexp616/CudaNTTs.jl">CudaNTTs.jl</a></b>
+            <p>Implementation of state-of-the-art NTT ported to Julia</p>
+          </div>
+          <div class="project">
+            <b><a href="https://github.com/jjgarzella/MMPSingularities.jl.git">MMPSingularities.jl</a></b>
+            <p>A library for algorithms that calculate various invariants 
+              of singularities from the Minimal Model Program.
+            </p>
+          </div>
+          <div class="project">
+            <b><a href="https://github.com/alexp616/optimized-addition">optimized-addition</a></b>
+            <p>
+              C implementation of fast integer addition using a variety of 
+              parallelization techniques
+            </p>
+          </div>
+          <div class="project">
+            <b><a href="https://arxiv.org/pdf/2502.12428">K3 Surfaces of any Artin-Mazur height over F<sub>5</sub> and F<sub>7</sub></a></b>
+            <p>
+              Result found using aforementioned libraries
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr>
+
+      <section id="favorite-language">
+        <h3>Favorite Programming Language</h3>
+
+        <p>
+          I'm a big fan of <a href="https://julialang.org/">Julia</a> (<span style="display: inline-block"><img src="assets/logos/julia.svg" height="15rem"></span>)
+          because it makes it easy 
+          to write one-off scripts and experiments, while 
+          having lots of capabilities for writing reasonably 
+          high-performant code.
+        </p>
+
+        <p>
+          Julia is a dynamically typed, JIT compiled language, 
+          making it easy to use when being lazy, but also very 
+          efficient when writing highly performant code.
+        </p>
+
+        <p>
+          Particularly, a the popular CUDA.jl library serves as a 
+          low barrier to entry introduction for GPU programming with 
+          NVIDIA GPU's. To give an example, this is how you copy an 
+          array from "CPU memory" (RAM) to "GPU memory" (DRAM) in CUDA C++:
+        </p>
+
+        <div class="code-block">
+          <code>
+            int h[5] = {5, 4, 3, 2, 1}; // host pointer <br>
+            int size = 20; // 5 numbers * 4 bytes <br> <br>
+
+            int *d; // device pointer <br>
+            cudaMalloc(&d, size); <br>
+            cudaMemcpy(d, h, size, cudaMemcpyHostToDevice); <br> <br>
+
+            // do stuff with d <br> <br>
+
+            cudaFree(d); // free device memory when done <br>
+          </code>
+        </div>
+
+        <p>
+          And this is the equivalent code in Julia using CUDA.jl:
+        </p>
+        <div class="code-block">
+          <code>
+            h = [5, 4, 3, 2, 1] <br>
+            d = cu(h) <br> <br>
+
+            # do stuff with d <br>
+          </code>
+        </div>
+
+        <p>
+          By just calling <code>cu</code>, CUDA.jl handles all of the memory 
+          allocation and copying, and Julia's garbage collector 
+          handles freeing unused objects. Additionally, debugging 
+          is (most of the time) a lot easier in Julia than C++.
+        </p>
+        
+      </section>
+      <hr>
+      <section>
+        <h3>Programming Language Experience Visual</h3>
+        <p>
+          Off the top of my head, I can list a LOT of 
+          languages I've written at least one line of 
+          code in. Below are 6 that I've written a lot 
+          more than one line of code in, with the size 
+          of the bar corresponding to how familiar I am 
+          with the language:
+        </p>
+        <div class="languages">
+          <div class="lang-box julia"><img src="assets/logos/julia.svg" width="50px"></div>
+          <div class="lang-box cpp"><img src="assets/logos/cpp.png" width="50px"></div>
+          <div class="lang-box c"><img src="assets/logos/c.png" width="50px"></div>
+          <div class="lang-box python"><img src="assets/logos/python.png" width="50px"></div>
+          <div class="lang-box dart"><img src="assets/logos/dart.png" width="50px"></div>
+          <div class="lang-box java"><img src="assets/logos/java.png" width="35px"></div>
+        </div>
+        <div style="display: none">
+          <p>Some hidden text</p>
+        </div>
+      </section>
   </body>
 </html>
