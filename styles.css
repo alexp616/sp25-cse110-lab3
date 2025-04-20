@@ -75,8 +75,8 @@ a {
     margin-right: auto;
     padding: 10px 2.6mm;
     border-radius: 2px;
-    border-style: transparent;
-    border-color: color-mix(in srgb, red 1%, blue 1%);
+    border-style: dotted;
+    border-color: color-mix(in rgb, black 50%, white 50%);
 }
 
 p:has(+ .code-block) {
@@ -86,13 +86,13 @@ p:has(+ .code-block) {
 .projects-grid {
     display: grid;  
     grid-template-columns: repeat(auto-fit, 150px);
-    grid-template-rows: repeat(static, 150px);
+    grid-template-rows: repeat(auto-fit, 150px);
     column-gap: 1.5cm;
 }
 
 div.project {
     background-color: #f5f5f5;
-    border: 1px solid color(srgb 0.1 0.1 0.1);
+    border: 1px solid rgb(26, 26, 26);
     border-radius: 8px;
     margin: 0.5rem;
     padding: 1em;
